@@ -46,7 +46,7 @@ jobs:
 
             - name: Terraform plan
               id: plan
-              run: terraform plan -out
+              run: terraform plan -no-color -input=false -out planfile
               continue-on-error: true
 
             - name: Terraform apply status
