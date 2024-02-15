@@ -4,6 +4,8 @@ variable "region" {
   default     = "ap-south-1"
 }
 
+
+
 variable "clusterName" {
   description = "Name of the EKS cluster"
   type        = string
