@@ -50,7 +50,6 @@ jobs:
               continue-on-error: true
 
             - name: Terraform apply status
-              if: steps.plan.outcome == 'failure'
               run: terraform destroy -auto-approve -input=false -parallelism=1 planfile
 
             # - name: Terraform apply
